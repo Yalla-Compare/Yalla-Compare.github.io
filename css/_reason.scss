@@ -1,0 +1,246 @@
+.section-reason {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__reasons {
+            width: 100%;
+            background: url('../img/background.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 700px;
+            position: relative;
+            &__title {
+                margin-left: 65px;
+                margin-top: 25px;
+                h3 {
+                    color: #FFFFFF;
+                    font-family: $poppins;
+                    font-size: 17px;
+                }
+                h2 {
+                    color: #FFFFFF;
+                    font-family: $poppins;
+                    font-size: 27px;
+                    margin-top: 8px;
+                }
+            }
+            &__yallacompare {
+                h2 {
+                    color: #FFFFFF;
+                    font-family: $poppins;
+                    font-size: 27px;
+                    opacity: 0.8;
+                    position: absolute;
+                    top: 51px;
+                    left: 43%;
+                }
+            }
+            &__subtitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+                &__first-column {
+                    height: 80%;
+                    width: 40%;
+                    margin-left: 65px;
+                    &__time {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &__image {
+                            background: url('../img/clock.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 73px;
+                            height: 60px;
+                            margin-top: 35px;
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    &__protect {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 7px;
+                        margin-top: 20px;
+                        &__image {
+                            background: url('../img/protect.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 53px;
+                            height: 40px;
+                            margin-top: 25px;
+                            margin-bottom: 15px;
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    &__awareness {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 7px;
+                        margin-top: 20px;
+                        &__image {
+                            background: url('../img/awareness.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 53px;
+                            height: 40px;
+                            margin-top: 25px;
+                            margin-bottom: 15px;
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+                &__second-column {
+                    height: 80%;
+                    width: 50%;
+                    &__compare {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 7px;
+                        margin-top: 20px;
+                        &__image {
+                            background: url('../img/research.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 53px;
+                            height: 40px;
+                        
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    &__headphones {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 7px;
+                        margin-top: 30px;
+                        &__image {
+                            background: url('../img/headphones.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 53px;
+                            height: 40px;
+                            margin-top: 25px;
+                            margin-bottom: 15px;
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    &__emoji {
+                        width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 7px;
+                        margin-top: 30px;
+                        &__image {
+                            background: url('../img/emoji.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 53px;
+                            height: 40px;
+                            margin-top: 25px;
+                            margin-bottom: 15px;
+                        }
+                        &__text {
+                            margin-left: 15px;
+                            h6 {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 19px;
+                            }
+                            p {
+                                color: #FFFFFF;
+                                font-family: $poppins;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__image {
+            background: url('../img/people.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 80vh;
+            width: 57%;
+            margin-bottom: 90px;
+        }
+    }
+}

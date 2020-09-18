@@ -1,0 +1,357 @@
+.section-header {
+    height: 100vh;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        &__navbar {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__logo {
+                background: url('../img/Logo.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 170px;
+                height: 30px;
+                margin-left: 10px;
+            }
+            &__links {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &__link {
+                    a {
+                        text-decoration: none;
+                        color: #222222;
+                        font-family: $poppins;
+                        font-size: 13px;
+                        margin-left: 50px;
+                    }
+                    .slash {
+                        background: url('../img/slash.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 31px;
+                        left: 38%;
+                    }
+                }      
+            }
+            &__another {
+                margin-right: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                &__user {
+                    background: url('../img/user.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 17px;
+                    height: 17px;
+                    margin-top: 12px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                &__search {
+                    background: url('../img/search.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 17px;
+                    height: 17px;
+                    margin-top: 12px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+                a {
+                    background-color: $blue;
+                    color: white;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    border: $blue 5px solid;
+                    padding: 8px;
+                    margin-left: 6px;
+                    text-decoration: none;
+                    margin-top: 0px;
+                }
+            } 
+        }
+        &__main-container {
+            height: 90%;
+            &__big-logo {
+                font-size: 190px;
+                color: #F2F2F2;
+                font-family: $poppins;
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+            &__herobox {
+                margin-left: 130px;
+                &__title {
+                    width: 58%;
+                    height: 30%;
+                    h1 {
+                        font-family: $poppins;
+                        font-size: 53px;
+                        color: #171717;
+                        width: 55%;
+                    }
+                    h2 {
+                        font-family: $poppins;
+                        font-size: 56px;
+                        color: #171717;
+                        margin-top: 12px;
+                        font-weight: 500;
+                    }
+                }
+                &__subtitle {
+                    &__winners {
+                        width: 100%;
+                        margin-top: 25px;
+                        p {
+                            color: #222222;
+                            font-size: 16px;
+                            font-family: $poppins;
+                            display: inline-block;
+                        }
+                        .pink {
+                            color: $pink;
+                            font-size: 16px;
+                            font-family: $poppins;
+                            margin-left: 3px;
+                        }
+                    }
+                    &__buttons {
+                        margin-top: 25px;
+                        .get {
+                            background-color: $blue;
+                            color: white;
+                            font-family: $poppins;
+                            font-size: 13px;
+                            border: $blue 2px solid;
+                            padding: 9px;
+                            text-decoration: none;
+                        }
+                        .learn {
+                            background-color: $white;
+                            color: #222E3C;
+                            font-family: $poppins;
+                            font-size: 13px;
+                            border: $blue 2px solid;
+                            padding: 9px;
+                            text-decoration: none;
+                            margin-left: 10px;
+                        }
+                        .cancel {
+                            display: inline-block;
+                            h2 {
+                            margin-left: 10px;
+                            color: #222E3C;
+                            font-family: $poppins;
+                            font-size: 13px;
+                            }
+                            .line {
+                                background: url('../img/line.png');
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 105px;
+                                height: 1px;
+                                margin-left: 9px;
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                    &__time_of_sale {
+                        width: 100px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 20px;
+                        &__discount {
+                            margin-top: 15px;
+                            h1 {
+                                color: $pink;
+                                font-family: $poppins;
+                                font-size: 42px;
+                            }
+                            h2 {
+                                color: $pink;
+                                font-family: $poppins;
+                                font-size: 30px;
+                                margin-top: 8px;
+                            }
+                        }
+                        &__times {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 15px;
+                            margin-left: 20px;
+                            .time {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 10px;
+                                height: 30px;
+                            h1 {
+                                color: $black;
+                                font-family: $poppins;
+                                font-size: 50px;
+                                margin-bottom: 7px;
+                                margin-left: 2px;
+                            }
+                            h3 {
+                                color: $gray;
+                                font-family: $poppins;
+                                font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                    &__social {
+                        width: 500px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 15px;
+                        &__socials {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            p {
+                                color: #171717;
+                                font-family: $poppins;
+                                font-size: 14px;
+                            }
+                            &__icons {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-left: 15px;
+                                .icon__fb {
+                                    width: 24px;
+                                    height: 24px;
+                                        &__fb {
+                                            background: url('../img/facebook.png');
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                .icon__twitter {
+                                    width: 24px;
+                                    height: 24px;
+                                        &__twitter {
+                                            background: url('../img/twitter.png');
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                .icon__youtube {
+                                    width: 24px;
+                                    height: 24px;
+                                        &__youtube {
+                                            background: url('../img/youtube.png');
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                .icon__instagram {
+                                    width: 24px;
+                                    height: 24px;
+                                        &__instagram {
+                                            background: url('../img/instagram.png');
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                .pinterest {
+                                    background: url('../img/pinterest.png');
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                        &__granding {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-right: 10px;
+                            &__mark {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &__star {
+                                    background: url('../img/star.png');
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                                h4 {
+                                    color: #171717;
+                                    font-family: $poppins;
+                                    font-size: 14px;
+                                }
+                            }
+                            &__reviews {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-left: 10px;
+                                &__google {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .google {
+                                        background: url('../img/google.png');
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        width: 12px;
+                                        height: 12px;
+                                    }
+                                    h4 {
+                                        color: #171717;
+                                        font-family: $poppins;
+                                        font-size: 14px;
+                                        margin-left: 3px;
+                                    }
+                                    p {
+                                        color: #171717;
+                                        font-family: $poppins;
+                                        font-size: 14px;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__image {
+                background: url('../img/blue_ford.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 800px;
+                height: 450px;
+                position: absolute;
+                top: 300px;
+                right: 15px;
+            }
+        }
+    }
+}

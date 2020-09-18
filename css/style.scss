@@ -1,0 +1,20 @@
+@import './reset';
+@import './colors';
+@import './breakpoints';
+@import './text_setup';
+@import './header';
+@import './work';
+@import './reason';
+@import './words';
+@import './win';
+@import './insurance';
+@import './companies';
+@import './guide';
+@import './compare';
+@import './footer';
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}

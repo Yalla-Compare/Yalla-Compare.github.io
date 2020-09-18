@@ -1,0 +1,119 @@
+.section-insurance {
+    margin-top: 100px;
+    height: 80vh;
+    background-color: $blue;
+    &-wrapper {
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &__text {
+            width: 850px;
+            height: 450px;
+            margin-left: 30px;
+            &__title {
+                h1 {
+                    font-size: 30px;
+                    font-family: $poppins;
+                    color: white;
+                }
+                p {
+                    font-size: 16px;
+                    font-family: $poppins;
+                    color: white;
+                    margin-top: 15px;
+                }
+            }
+            &__subtitle {
+                width: 850px;
+                &__price {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 55px;
+                    .tick {
+                        background: url('../img/tick.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 23px;
+                        height: 21px;
+                        margin-right: 10px;
+                        margin-top: 5px;
+                    }
+                    h1 {
+                        color: #A7D1FF;
+                        font-size: 27px;
+                        font-family: $poppins;
+                    }
+                    p {
+                        color: white;
+                        font-size: 18px;
+                        font-family: $poppins;
+                        margin-top: 9px;
+                    }
+                }
+                &__sale {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 35px;
+                    .tick {
+                        background: url('../img/tick.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 23px;
+                        height: 21px;
+                        margin-right: 10px;
+                        margin-top: 5px;
+                    }
+                    h1 {
+                        color: #A7D1FF;
+                        font-size: 27px;
+                        font-family: $poppins;
+                    }
+                    p {
+                        color: white;
+                        font-size: 18px;
+                        font-family: $poppins;
+                        margin-top: 9px;
+                    }
+                }
+                &__text {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 35px;
+                    .tick {
+                        background: url('../img/tick.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 23px;
+                        height: 21px;
+                        margin-right: 10px;
+                        margin-top: 5px;
+                    }
+                    h1 {
+                        color: #A7D1FF;
+                        font-size: 27px;
+                        font-family: $poppins;
+                    }
+                    p {
+                        color: white;
+                        font-size: 18px;
+                        font-family: $poppins;
+                        margin-top: 9px;
+                    }
+                }
+            }
+        }
+        &__image {
+            background: url('../img/insurance.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 550px;
+            height: 550px;
+            margin-right: 70px;
+        }
+    }
+}

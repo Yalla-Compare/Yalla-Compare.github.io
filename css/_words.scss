@@ -1,0 +1,163 @@
+.section-words {
+    height: 90vh;
+    &-wrapper {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 70px;
+            h1 {
+                font-family: $poppins;
+                font-size: 30px;
+                color: #171717;
+                font-weight: 500;
+            }
+            p {
+                font-family: $poppins;
+                font-size: 16px;
+                color: #171717;
+                font-weight: 100;
+                margin-top: 15px;
+            }
+        }
+        &__facts {
+            width: 100%;
+            height: 700px;
+            &__first-row {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .fact {
+                    width: 360px;
+                    height: 140px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &-background {
+                        background: url('../img/background-2.png');
+                        background-repeat: no-repeat;
+                        box-shadow: 1px 4px 12px 0 rgba($color: #3D3636, $alpha: 0.75);
+                        width: 68px;
+                        height: 68px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 70px;
+                        margin-bottom: 30px;
+                        &-image {
+                            background: url('../img/sale.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__image-2 {
+                            background: url('../img/sold.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__image-3 {
+                            background: url('../img/discount.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    &__footer {
+                        width: 350px;
+                        margin-left: 70px;
+                        h2 {
+                            font-family: $poppins;
+                            color: #171717;
+                            font-size: 17px;
+                            margin-left: 40px;
+                        }
+                        p {
+                            font-family: $poppins;
+                            color: #171717;
+                            font-size: 12px;
+                            margin-top: 7px;
+                            padding-right: 10px;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+            &__second-row {
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+                .fact {
+                    width: 360px;
+                    height: 140px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &-background {
+                        background: url('../img/background-2.png');
+                        background-repeat: no-repeat;
+                        box-shadow: 1px 4px 12px 0 rgba($color: #3D3636, $alpha: 0.75);
+                        width: 68px;
+                        height: 68px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 70px;
+                        margin-bottom: 30px;
+                        &-image {
+                            background: url('../img/pay.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__image-2 {
+                            background: url('../img/help.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__image-3 {
+                            background: url('../img/refund.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    &__footer {
+                        width: 350px;
+                        margin-left: 70px;
+                        h2 {
+                            font-family: $poppins;
+                            color: #171717;
+                            font-size: 17px;
+                            margin-left: 10px;
+                        }
+                        p {
+                            font-family: $poppins;
+                            color: #171717;
+                            font-size: 12px;
+                            margin-top: 7px;
+                            padding-right: 30px;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
