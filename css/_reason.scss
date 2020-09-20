@@ -1,14 +1,15 @@
 .section-reason {
+    width: 100vw;
     &-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         &__reasons {
-            width: 100%;
+            width: 950px;
             background: url('../img/background.png');
             background-repeat: no-repeat;
             background-size: contain;
-            height: 700px;
+            height: 500px;
             position: relative;
             &__title {
                 margin-left: 65px;
@@ -18,33 +19,34 @@
                     font-family: $poppins;
                     font-size: 17px;
                 }
-                h2 {
-                    color: #FFFFFF;
-                    font-family: $poppins;
-                    font-size: 27px;
-                    margin-top: 8px;
-                }
-            }
-            &__yallacompare {
-                h2 {
-                    color: #FFFFFF;
-                    font-family: $poppins;
-                    font-size: 27px;
-                    opacity: 0.8;
-                    position: absolute;
-                    top: 51px;
-                    left: 43%;
+                &__big__title {
+                    width: 500px;
+                    .first {
+                        color: #FFFFFF;
+                        font-family: $poppins;
+                        font-size: 27px;
+                        margin-top: 8px;
+                    }
+                    .second {
+                        color: #FFFFFF;
+                        font-family: $poppins;
+                        font-size: 27px;
+                        opacity: 0.8;
+                        position: absolute;
+                        top: 51px;
+                        left: 43%;
+                    }
                 }
             }
             &__subtitle {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
                 margin-top: 40px;
+                width: 900px;
                 &__first-column {
                     height: 80%;
                     width: 40%;
-                    margin-left: 65px;
                     &__time {
                         width: 350px;
                         display: flex;
@@ -138,7 +140,7 @@
                 }
                 &__second-column {
                     height: 80%;
-                    width: 50%;
+                    width: 35%;
                     &__compare {
                         width: 350px;
                         display: flex;
@@ -234,13 +236,15 @@
                 }
             }
         }
-        &__image {
-            background: url('../img/people.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 80vh;
-            width: 57%;
-            margin-bottom: 90px;
+        &__background {
+            width: 534px;
+            &__image {
+                background: url('../img/people.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 485px;
+                width: 790px;
+            }
         }
     }
 }

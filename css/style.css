@@ -426,17 +426,6 @@ textarea {
   margin-left: 50px;
 }
 
-.section-header-wrapper__navbar__links__link .slash {
-  background: url("../img/slash.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 31px;
-  left: 38%;
-}
-
 .section-header-wrapper__navbar__another {
   margin-right: 25px;
   display: -webkit-box;
@@ -867,6 +856,7 @@ textarea {
 .section-work {
   margin-top: 100px;
   height: 90vh;
+  margin-top: 150px;
 }
 
 .section-work-wrapper {
@@ -1122,6 +1112,10 @@ textarea {
   cursor: pointer;
 }
 
+.section-reason {
+  width: 100vw;
+}
+
 .section-reason-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,11 +1129,11 @@ textarea {
 }
 
 .section-reason-wrapper__reasons {
-  width: 100%;
+  width: 950px;
   background: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 700px;
+  height: 500px;
   position: relative;
 }
 
@@ -1154,14 +1148,18 @@ textarea {
   font-size: 17px;
 }
 
-.section-reason-wrapper__reasons__title h2 {
+.section-reason-wrapper__reasons__title__big__title {
+  width: 500px;
+}
+
+.section-reason-wrapper__reasons__title__big__title .first {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   margin-top: 8px;
 }
 
-.section-reason-wrapper__reasons__yallacompare h2 {
+.section-reason-wrapper__reasons__title__big__title .second {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 27px;
@@ -1175,19 +1173,18 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 40px;
+  width: 900px;
 }
 
 .section-reason-wrapper__reasons__subtitle__first-column {
   height: 80%;
   width: 40%;
-  margin-left: 65px;
 }
 
 .section-reason-wrapper__reasons__subtitle__first-column__time {
@@ -1315,7 +1312,7 @@ textarea {
 
 .section-reason-wrapper__reasons__subtitle__second-column {
   height: 80%;
-  width: 50%;
+  width: 35%;
 }
 
 .section-reason-wrapper__reasons__subtitle__second-column__compare {
@@ -1442,13 +1439,16 @@ textarea {
   margin-top: 10px;
 }
 
-.section-reason-wrapper__image {
+.section-reason-wrapper__background {
+  width: 534px;
+}
+
+.section-reason-wrapper__background__image {
   background: url("../img/people.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 80vh;
-  width: 57%;
-  margin-bottom: 90px;
+  height: 485px;
+  width: 790px;
 }
 
 .section-words {
