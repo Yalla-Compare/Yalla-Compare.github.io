@@ -478,11 +478,11 @@ textarea {
 }
 
 .section-header-wrapper__main-container__big-logo {
-  font-size: 190px;
+  font-size: 175px;
   color: #F2F2F2;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .section-header-wrapper__main-container__herobox {
@@ -1130,7 +1130,7 @@ textarea {
   background: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 490px;
+  height: 465px;
   position: relative;
 }
 
@@ -1163,7 +1163,7 @@ textarea {
   opacity: 0.8;
   position: absolute;
   top: 51px;
-  left: 43%;
+  left: 47%;
 }
 
 .section-reason-wrapper__reasons__subtitle {
@@ -1437,15 +1437,16 @@ textarea {
 }
 
 .section-reason-wrapper__background {
-  width: 634px;
+  width: 700px;
+  height: 465px;
 }
 
 .section-reason-wrapper__background__image {
   background: url("../img/people.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 490px;
-  width: 634px;
+  height: 465px;
+  width: 700px;
 }
 
 .section-words {

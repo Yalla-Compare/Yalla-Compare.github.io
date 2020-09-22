@@ -8,7 +8,7 @@
             background: url('../img/background.png');
             background-repeat: no-repeat;
             background-size: contain;
-            height: 490px;
+            height: 465px;
             position: relative;
             &__title {
                 margin-left: 65px;
@@ -33,7 +33,7 @@
                         opacity: 0.8;
                         position: absolute;
                         top: 51px;
-                        left: 43%;
+                        left: 47%;
                     }
                 }
             }
@@ -236,13 +236,14 @@
             }
         }
         &__background {
-            width: 634px;
+            width: 700px;
+            height: 465px;
             &__image {
                 background: url('../img/people.png');
                 background-repeat: no-repeat;
                 background-size: cover;
-                height: 490px;
-                width: 634px;
+                height: 465px;
+                width: 700px;
             }
         }
     }
