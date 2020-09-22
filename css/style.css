@@ -478,11 +478,11 @@ textarea {
 }
 
 .section-header-wrapper__main-container__big-logo {
-  font-size: 175px;
+  font-size: 170px;
   color: #F2F2F2;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .section-header-wrapper__main-container__herobox {
