@@ -1,3 +1,112 @@
 .section-companies {
-    
+    height: 80vh;
+    &-wrapper {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            margin-top: 100px;
+            h1 {
+            font-family: $poppins;
+            font-size: 30px;
+            color: #171717;
+            font-weight: 500;
+            }
+        }
+        &__main-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 740px;
+            height: 300px;
+            margin-top: 40px;
+            &__first-column {
+                width: 277px;
+                height: 300px;
+                &-company-1 {
+                    background: url('../img/albuhaira-logo.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 213px;
+                    height: 60px;
+                }
+                &-company-2 {
+                    background: url('../img/al_sagr_insurance.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 267px;
+                    height: 75px;
+                    margin-top: 60px;
+                }
+                &-company-3 {
+                    background: url('../img/abu_dhabi.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 260px;
+                    height: 93px;
+                    margin-top: 40px;
+                }
+            }
+            &__second-column {
+                width: 233px;
+                height: 300px;
+                margin-bottom: 10px;
+                &-company-1 {
+                    background: url('../img/al_wathba.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 205px;
+                    height: 80px;
+                }
+                &-company-2 {
+                    background: url('../img/dubai-national.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 210px;
+                    height: 49px;
+                    margin-top: 60px;
+                }
+                &-company-3 {
+                    background: url('../img/al-hilal.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 210px;
+                    height: 80px;
+                    margin-top: 70px;
+                }
+            }
+            &__third-column {
+                height: 300px;
+                width: 233px;
+                margin-left: 20px;
+                &-company-1 {
+                    background: url('../img/oriental.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 210px;
+                    height: 90px;
+                    margin-bottom: 15px;
+                }
+                &-company-2 {
+                    background: url('../img/methaq-logo.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 214px;
+                    height: 75px;
+                    margin-top: 25px;
+                    margin-left: 35px;
+                }
+                &-company-3 {
+                    background: url('../img/redefining.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 245px;
+                    height: 65px;
+                    margin-top: 55px;
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
 }

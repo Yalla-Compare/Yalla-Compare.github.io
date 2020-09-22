@@ -2,14 +2,13 @@
     width: 100vw;
     &-wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         &__reasons {
             width: 950px;
             background: url('../img/background.png');
             background-repeat: no-repeat;
             background-size: contain;
-            height: 500px;
+            height: 490px;
             position: relative;
             &__title {
                 margin-left: 65px;
@@ -237,13 +236,13 @@
             }
         }
         &__background {
-            width: 534px;
+            width: 634px;
             &__image {
                 background: url('../img/people.png');
                 background-repeat: no-repeat;
-                background-size: contain;
-                height: 485px;
-                width: 790px;
+                background-size: cover;
+                height: 490px;
+                width: 634px;
             }
         }
     }
