@@ -2,11 +2,18 @@
     margin-top: 100px;
     height: 90vh;
     margin-top: 150px;
+    @include media('<=phone') {
+        margin-top: 130px;
+        height: 100vh;
+    }
     &-wrapper {
         height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media('<=phone') {
+            height: 100vh;
+        }
         &__title {
             display: flex;
             flex-direction: column;
@@ -18,6 +25,9 @@
                 font-size: 30px;
                 color: #171717;
                 font-weight: 500;
+                @include media('<=phone') {
+                    font-size: 25px;
+                }
             }
             p {
                 font-family: $poppins;
@@ -25,20 +35,38 @@
                 color: #171717;
                 font-weight: 100;
                 margin-top: 15px;
+                @include media('<=phone') {
+                    font-size: 13px;
+                    margin-left: 5px;
+                }
             }
         }
         &__container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70vh;
+            height: 100vh;
             width: 100%;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             &__list {
                 display: flex;
                 flex-direction: column;
                 width: 50%;
                 margin-left: 40px;
                 margin-top: 15px;
+                @include media('<=phone') {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-left: 0;
+                    width: 97%;
+                }
                 &__compare {
                     display: flex;
                     justify-content: space-between;
@@ -79,6 +107,10 @@
                         font-weight: lighter;
                         width: 350px;
                         margin-left: 7px;
+                        @include media('<=phone') {
+                            font-size: 14px;
+                            width: 320px;
+                        }
                     }
                 }
                 &__buy {
@@ -147,6 +179,12 @@
                 align-items: center;
                 margin-right: 40px;
                 cursor: pointer;
+                @include media('<=phone') {
+                    margin-top: 60px;
+                    width: 330px;
+                    height: 300px;
+                    margin-right: 0;
+                }
                 &__image {
                     background: url('../img/buying_car.png');
                     background-repeat: no-repeat;
@@ -155,6 +193,10 @@
                     height: 430px;
                     margin-top: 60px;
                     cursor: pointer;
+                    @include media('<=phone') {
+                        width: 320px;
+                        height: 330px;
+                    }
                 }
             }
         }

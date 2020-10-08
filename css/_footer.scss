@@ -1,24 +1,42 @@
 .section-footer {
     height: 40vh;
     margin-top: 60px;
+    @include media('<=phone') {
+        margin-top: 600px;
+        height: 60vh;
+    }
     &-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 40vh;
+        @include media('<=phone') {
+            height: 60vh;
+        }
         &__header_of_footer {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 10px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5px;
+            }
             &__image__and__logo {
                 width: 100px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 margin-left: 7px;
+                @include media('<=phone') {
+                    margin-right: 20px;
+                }
                 .image {
                     background: url('../img/petra.png');
                     background-repeat: no-repeat;
@@ -36,10 +54,16 @@
             &__text {
                 margin-left: 35px;
                 margin-top: 2px;
+                @include media('<=phone') {
+                    margin-left: 20px;
+                }
                 p {
                     font-size: 22px;
                     font-family: $poppins;
                     color: #000000;
+                    @include media('<=phone') {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -50,6 +74,14 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            @include media('<=phone') {
+                height: 330px;
+                width: 540px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
             &__logo {
                 background: url('../img/Logo_yallacompare.png');
                 background-repeat: no-repeat;
@@ -57,18 +89,35 @@
                 width: 223px;
                 height: 45px;
                 margin-left: 10%;
+                @include media('<=phone') {
+                    position: absolute;
+                    top: 10px;
+                    left: 45px;
+                    width: 215px;
+                    height: 37px;
+
+                }
             }
             &__links {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-right: 130px;
+                @include media('<=phone') {
+                    margin-right: 0;
+                    margin-left: 85px;
+                    width: 370px;
+                }
                 h2 {
                     color: $gray;
                     font-family: $poppins;
                     font-size: 13px;
                     margin-left: 15px;
+                    width: 100px;
                     cursor: pointer;
+                    @include media('<=phone') {
+                        font-size: 8px;
+                    }
                 }
             }
             &__icons {
@@ -76,6 +125,12 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 250px;
+                @include media('<=phone') {
+                    margin-top: 90px;
+                    position: absolute;
+                    right: 95px;
+                    width: 300px;
+                }
                 span {
                     height: 26px;
                     background-color: #707070;
@@ -85,35 +140,35 @@
                     background: url('../img/black-facebook.png');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 13px;
-                    height: 26px;
+                    width: 10px;
+                    height: 20px;
                 }
                 .twitter {
                     background: url('../img/black-twitter.png');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 29px;
-                    height: 26px;
+                    width: 26px;
+                    height: 23px;
                 }
                 .youtube {
                     background: url('../img/black-youtube.png');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 24px;
-                    height: 26px;
+                    width: 22px;
+                    height: 24px;
                 }
                 .instagram {
                     background: url('../img/black-instagram.png');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 28px;
-                    height: 26px;
+                    width: 26px;
+                    height: 24px;
                 }
                 .pinterest {
                     background: url('../img/pinterest-black.png');
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 24px;
+                    width: 21px;
                     height: 29px;
                 }
             }
@@ -124,24 +179,42 @@
             align-items: center;
             width: 100%;
             height: 100px;
+            @include media('<=phone') {
+                height: 215px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+            }
             &__copyright {
                 margin-left: 111px;
+                @include media('<=phone') {
+                    margin-left: 0;
+                }
                 p {
                 font-family: $poppins;
                 font-size: 17px;
                 color: #000000;
+                @include media('<=phone') {
+                    font-size: 15px;
+                }
                 a {
                     font-family: $poppins;
                     font-size: 17px;
                     color: #000000;
+                    @include media('<=phone') {
+                        font-size: 15px;
                     }
                 }
             }
+        }
             &__pay {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-right: 70px;
+                @include media('<=phone') {
+                    margin-right: 30px;
+                }
                 .installments {
                     background: url('../img/installment.png');
                     background-repeat: no-repeat;
@@ -155,6 +228,9 @@
                     background-size: contain;
                     width: 54px;
                     height: 32px;
+                    @include media('<=phone') {
+                        margin-right: 35px;
+                    }
                 }
                 .visa {
                     background: url('../img/credit-card-visa.png');
@@ -163,6 +239,9 @@
                     width: 47px;
                     height: 32px;
                     margin-left: 30px;
+                    @include media('<=phone') {
+                        margin-left: 5px;
+                    }
                 }
             }
             &__download {

@@ -14,6 +14,23 @@
             <div class="section-header-wrapper__navbar">
                 <div class="section-header-wrapper__navbar__logo"></div>
                 <div class="section-header-wrapper__navbar__links">
+                    <div class="menu-hamburger">
+                        <div class="menu-hamburger__button"></div>
+                        <div class="toggle-links">
+                            <div class="toggle-links__link">
+                                <a href="#">Home</a>
+                            </div>
+                            <div class="toggle-links__link">
+                                <a href="#">Our Services</a>
+                            </div>
+                            <div class="toggle-links__link">
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="toggle-links__link">
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="section-header-wrapper__navbar__links__link">
                         <a href="">Home</a>
                     </div>
@@ -227,7 +244,7 @@
             <div class="section-words-wrapper__title">
                 <h1>More Than Just Words</h1>
                 <p>We are the best on the market & we can prove with more than just words,
-                    check our ratings below</p>
+                     kek check our ratings below</p>
             </div>
             <div class="section-words-wrapper__facts">
                 <div class="section-words-wrapper__facts__first-row">
@@ -516,5 +533,14 @@
             </div>
         </div>
     </footer> 
+    <script>
+    const navButton = document.querySelector('.menu-hamburger');
+
+    navButton.addEventListener('click', navEvent);
+
+    function navEvent(event) {
+        navButton.classList.toggle('open');
+    }
+    </script>
 </body>
 </html>

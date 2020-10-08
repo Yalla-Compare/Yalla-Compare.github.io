@@ -2,31 +2,56 @@
     margin-top: 100px;
     height: 80vh;
     background-color: $blue;
+    @include media('<=phone') {
+        height: 100vh;
+    }
     &-wrapper {
         height: 80vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include media('<=phone') {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__text {
             width: 850px;
             height: 450px;
             margin-left: 30px;
+            @include media('<=phone') {
+                width: 100%;
+                height: 500px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
             &__title {
                 h1 {
                     font-size: 30px;
                     font-family: $poppins;
                     color: white;
+                    @include media('<=phone') {
+                        font-size: 17px;
+                    }
                 }
                 p {
                     font-size: 16px;
                     font-family: $poppins;
                     color: white;
                     margin-top: 15px;
+                    @include media('<=phone') {
+                        font-size: 11px;
+                    }
                 }
             }
             &__subtitle {
                 width: 850px;
+                @include media('<=phone') {
+                    width: 100%;
+                }
                 &__price {
                     position: relative;
                     display: flex;
@@ -40,17 +65,27 @@
                         height: 21px;
                         margin-right: 10px;
                         margin-top: 5px;
+                        @include media('<=phone') {
+                            height: 23px;
+                            width: 25px;
+                        }
                     }
                     h1 {
                         color: #A7D1FF;
                         font-size: 27px;
                         font-family: $poppins;
+                        @include media('<=phone') {
+                            font-size: 21px;
+                        }
                     }
                     p {
                         color: white;
                         font-size: 18px;
                         font-family: $poppins;
                         margin-top: 9px;
+                        @include media('<=phone') {
+                            font-size: 13px;
+                        }
                     }
                 }
                 &__sale {
@@ -66,17 +101,26 @@
                         height: 21px;
                         margin-right: 10px;
                         margin-top: 5px;
+                        @include media('<=phone') {
+                            width: 19px;
+                        }
                     }
                     h1 {
                         color: #A7D1FF;
                         font-size: 27px;
                         font-family: $poppins;
+                        @include media('<=phone') {
+                            font-size: 21px;
+                        }
                     }
                     p {
                         color: white;
                         font-size: 18px;
                         font-family: $poppins;
                         margin-top: 9px;
+                        @include media('<=phone') {
+                            font-size: 13px;
+                        }
                     }
                 }
                 &__text {
@@ -97,12 +141,18 @@
                         color: #A7D1FF;
                         font-size: 27px;
                         font-family: $poppins;
+                        @include media('<=phone') {
+                            font-size: 21px;
+                        }
                     }
                     p {
                         color: white;
                         font-size: 18px;
                         font-family: $poppins;
                         margin-top: 9px;
+                        @include media('<=phone') {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
@@ -114,6 +164,13 @@
             width: 550px;
             height: 550px;
             margin-right: 70px;
+            @include media('<=phone') {
+                margin-right: 0;
+                width: 550px;
+                height: 550px;
+                margin-left: 200px;
+                margin-bottom: 30px;
+            }
         }
     }
 }

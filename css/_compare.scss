@@ -1,16 +1,26 @@
 .section-compare {
     height: 80vh;
+    @include media('<=phone') {
+        margin-top: 100px;
+        height: 100vh;
+    }
     &-wrapper {
         height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
+        @include media('<=phone') {
+            height: 100vh;
+        }
         &__title {
             h1 {
                 font-family: $poppins;
                 color: $black;
                 font-size: 31px;
+                @include media('<=phone') {
+                    font-size: 29px;
+                }
             }
         }
         &__links {
@@ -44,10 +54,23 @@
             width: 1300px;
             margin-top: 70px;
             margin-right: 40px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px;
+            }
             &__first {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
+                @include media('<=phone') {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .arcticle {
                     background: url('../img/trade.png');
                     background-repeat: no-repeat;
@@ -58,6 +81,11 @@
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-left: 30px;
+                    @include media('<=phone') {
+                        width: 245px;
+                        height: 251px;
+                        margin-top: 15px;
+                    }
                     &-text {
                         background-color: $blue;
                         width: 295px;
@@ -78,6 +106,9 @@
                             font-size: 14px;
                             margin-top: 6px;
                             margin-left: 30px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
@@ -91,6 +122,11 @@
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-left: 30px;
+                    @include media('<=phone') {
+                        width: 245px;
+                        height: 251px;
+                        margin-top: 15px;
+                    }
                     &-text {
                         background-color: $blue;
                         width: 295px;
@@ -111,6 +147,9 @@
                             font-size: 14px;
                             margin-top: 6px;
                             margin-left: 30px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
@@ -119,6 +158,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
+                @include media('<=phone') {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+                }
                 .arcticle-3 {
                     background: url('../img/house.png');
                     background-repeat: no-repeat;
@@ -129,6 +175,10 @@
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-left: 30px;
+                    @include media('<=phone') {
+                        width: 245px;
+                        height: 251px;
+                    }
                     &-text {
                         background-color: $blue;
                         width: 295px;
@@ -149,6 +199,9 @@
                             font-size: 14px;
                             margin-top: 6px;
                             margin-left: 30px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
@@ -162,6 +215,11 @@
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-left: 30px;
+                    @include media('<=phone') {
+                        width: 245px;
+                        height: 251px;
+                        margin-top: 15px;
+                    }
                     &-text {
                         background-color: $blue;
                         width: 295px;
@@ -182,6 +240,9 @@
                             font-size: 14px;
                             margin-top: 6px;
                             margin-left: 30px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }

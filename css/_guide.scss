@@ -2,6 +2,11 @@
     height: 100vh;
     background-color: #F7F7F7;
     margin-top: 80px;
+    @include media('<=phone') {
+        margin-top: 250px;
+        height: 1600px;
+        position: relative;
+    }
     &-wrapper {
         display: flex;
         flex-direction: column;
@@ -11,10 +16,17 @@
         height: 100vh;
         &__title {
             margin-top: 30px;
+            @include media('<=phone') {
+                margin-top: 15px;
+                height: 1500px;
+            }
             h1 {
                 font-family: $poppins;
                 color: $black;
                 font-size: 28px;
+                @include media('<=phone') {
+                    font-size: 25px;
+                }
             }
         }
         &__cards {
@@ -24,6 +36,16 @@
             justify-content: space-around;
             align-items: center;
             margin-top: 5px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 200px;
+                margin-top: 670px;
+                margin-right: 15px;
+            }
             .card {
                 display: flex;
                 justify-content: center;
@@ -32,6 +54,7 @@
                 height: 560px;
                 width: 350px;
                 margin-left: 60px;
+
                 &__image {
                     background: url('../img/keys_of_car.png');
                     background-repeat: no-repeat;
@@ -48,6 +71,11 @@
                     height: 260px;
                     margin-right: 35px;
                     margin-bottom: 25px;
+                    @include media('<=phone') {
+                        width: 310px;
+                        height: 260px;
+                        margin-right: 10px;
+                    }
                 }
                 &__image-3 {
                     background: url('../img/car_and_money.png');
@@ -56,10 +84,17 @@
                     width: 350px;
                     height: 290px;
                     margin-bottom: 13px;
+                    @include media('<=phone') {
+                        width: 420px;
+                        height: 330px;
+                        margin-left: 45px;
+                        margin-bottom: 0;
+                    }
                 }
                 &__footer {
                     width: 330px;
                     margin-top: 10px;
+
                     &-title {
                         h2 {
                         font-family: $poppins;
@@ -76,6 +111,10 @@
                             color: #171717;
                             font-weight: lighter;
                             margin-bottom: 15px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                                width: 90%;
+                            }
                         }
                     }
                     .read-more {
@@ -95,6 +134,10 @@
                 }
                 &__footers {
                     margin-bottom: 10px;
+                    @include media('<=phone') {
+                        margin-left: 15px;
+                        margin-bottom: 0;
+                    }
                     &-title2 {
                         h2 {
                             font-family: $poppins;
@@ -111,6 +154,12 @@
                             color: #171717;
                             font-weight: lighter;
                             width: 77%;
+                            margin-bottom: 15px;
+                            @include media('<=phone') {
+                                font-size: 13px;
+                                width: 80%;
+                                margin-top: 10px;
+                            }
                         }
                     }
                     .read-more-3 {
@@ -124,9 +173,20 @@
             }
             .card:nth-child(2) {
                 margin-top: 7px;
+                @include media('<=phone') {
+                    height: 520px;
+                    width: 400px;
+                    margin-top: 30px;
+                }
             }
             .card:nth-child(3) {
                 margin-top: 18px;
+                @include media('<=phone') {
+                    height: 520px;
+                    width: 400px;
+                    margin-top: 30px;
+                    margin-left: 95px;
+                }
             }
         }
         span {
@@ -137,12 +197,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include media('<=phone') {
+                position: absolute;
+                bottom: 40px;
+                left: 5px;
+                width: 360px;
+            }
             .line {
                 background-color: $blue;
                 width: 280px;
-                height: 9px;
+                height: 6px;
                 border-radius: 5px;
                 margin-bottom: 5px;
+                @include media('<=phone') {
+                    width: 160px;
+                }
             }
         }
     }

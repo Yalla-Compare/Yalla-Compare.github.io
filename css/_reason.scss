@@ -1,30 +1,66 @@
 .section-reason {
     width: 100vw;
+    @include media('<=phone') {
+        margin-top: 100%;
+        height: 100vh;
+    }
     &-wrapper {
         display: flex;
         align-items: center;
+        @include media('<=phone') {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__reasons {
             width: 950px;
-            background: url('../img/background.png');
-            background-repeat: no-repeat;
-            background-size: contain;
+            background: rgb(142,49,92);
+            background: linear-gradient(90deg, rgba(142,49,92,1) 0%, rgba(232,76,155,1) 0%);
             height: 465px;
             position: relative;
+            @include media('<=phone') {
+                height: 800px;
+                background: rgb(142,49,92);
+                background: linear-gradient(90deg, rgba(142,49,92,1) 0%, rgba(232,76,155,1) 0%);
+            }
             &__title {
                 margin-left: 65px;
                 margin-top: 25px;
+                @include media('<=phone') {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
                 h3 {
                     color: #FFFFFF;
                     font-family: $poppins;
                     font-size: 17px;
+                    @include media('<=phone') {
+                        font-size: 18px;
+                        margin-right: 80px;
+                    }
                 }
                 &__big__title {
                     width: 500px;
+                    @include media('<=phone') {
+                        width: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     .first {
                         color: #FFFFFF;
                         font-family: $poppins;
                         font-size: 27px;
                         margin-top: 8px;
+                        @include media('<=phone') {
+                            margin-right: 69px;
+                            font-size: 25px;
+                        }
                     }
                     .second {
                         color: #FFFFFF;
@@ -34,6 +70,11 @@
                         position: absolute;
                         top: 51px;
                         left: 47%;
+                        @include media('<=phone') {
+                            top: 85px;
+                            left: 36%;
+                            font-size: 32px;
+                        }
                     }
                 }
             }
@@ -43,9 +84,25 @@
                 align-items: center;
                 margin-top: 40px;
                 width: 900px;
+                @include media('<=phone') {
+                    height: 80%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 &__first-column {
                     height: 80%;
                     width: 40%;
+                    @include media('<=phone') {
+                        height: 80%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     &__time {
                         width: 350px;
                         display: flex;
@@ -71,6 +128,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=phone') {
+                                    width: 90%;
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -133,6 +194,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=phone') {
+                                    font-size: 15px;
+                                    width: 93%;
+                                }
                             }
                         }
                     }
@@ -147,13 +212,15 @@
                         align-items: center;
                         margin-left: 7px;
                         margin-top: 20px;
+                        @include media('<=phone') {
+                            margin-left: 0;
+                        }
                         &__image {
                             background: url('../img/research.png');
                             background-repeat: no-repeat;
                             background-size: contain;
                             width: 53px;
                             height: 40px;
-                        
                         }
                         &__text {
                             margin-left: 15px;
@@ -167,6 +234,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=phone') {
+                                    width: 90%;
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -177,6 +248,9 @@
                         align-items: center;
                         margin-left: 7px;
                         margin-top: 30px;
+                        @include media('<=phone') {
+                            margin-left: 0;
+                        }
                         &__image {
                             background: url('../img/headphones.png');
                             background-repeat: no-repeat;
@@ -198,6 +272,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=phone') {
+                                    width: 90%;
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -208,6 +286,9 @@
                         align-items: center;
                         margin-left: 7px;
                         margin-top: 30px;
+                        @include media('<=phone') {
+                            margin-left: 0;
+                        }
                         &__image {
                             background: url('../img/emoji.png');
                             background-repeat: no-repeat;
@@ -229,6 +310,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=phone') {
+                                    width: 90%;
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -244,6 +329,14 @@
                 background-size: cover;
                 height: 465px;
                 width: 700px;
+                @include media('<=phone') {
+                    background: url('../img/people.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 480px;
+                    height: 350px;
+                    margin-left: 144px;
+                }
             }
         }
     }

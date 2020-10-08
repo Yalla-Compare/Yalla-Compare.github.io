@@ -1,11 +1,18 @@
 .section-words {
     height: 90vh;
     margin-top: 100px;
+    @include media('<=phone') {
+        margin-top: 66%;
+        height: 100vh;
+    }
     &-wrapper {
         height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media('<=phone') {
+            height: 100vh;
+        }
         &__title {
             display: flex;
             flex-direction: column;
@@ -13,11 +20,17 @@
             align-items: center;
             width: 100%;
             margin-bottom: 70px;
+            @include media('<=phone') {
+                margin-bottom: 110px;
+            }
             h1 {
                 font-family: $poppins;
                 font-size: 30px;
                 color: #171717;
                 font-weight: 500;
+                @include media('<=phone') {
+                    font-size: 27px;
+                }
             }
             p {
                 font-family: $poppins;
@@ -25,15 +38,33 @@
                 color: #171717;
                 font-weight: 100;
                 margin-top: 15px;
+                @include media('<=phone') {
+                    font-size: 13px;
+                    margin-left: 6px;
+                }
             }
         }
         &__facts {
             width: 100%;
             height: 700px;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 820px;
+                margin-left: 20px;
+            }
             &__first-row {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                @include media('<=phone') {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .fact {
                     width: 360px;
                     height: 140px;
@@ -41,6 +72,9 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    @include media('<=phone') {
+                        margin-top: 40px;
+                    }
                     &-background {
                         background: url('../img/background-2.png');
                         background-repeat: no-repeat;
@@ -99,6 +133,13 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0;
+            }
                 .fact {
                     width: 360px;
                     height: 140px;
@@ -106,6 +147,9 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    @include media('<=phone') {
+                        margin-top: 40px;
+                    }
                     &-background {
                         background: url('../img/background-2.png');
                         background-repeat: no-repeat;
