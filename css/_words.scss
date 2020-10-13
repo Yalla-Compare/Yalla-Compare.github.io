@@ -28,6 +28,9 @@
                 font-size: 30px;
                 color: #171717;
                 font-weight: 500;
+                @include media('<=tablet') {
+                    font-size: 28px;
+                }
                 @include media('<=phone') {
                     font-size: 27px;
                 }
@@ -38,6 +41,9 @@
                 color: #171717;
                 font-weight: 100;
                 margin-top: 15px;
+                @include media('<=tablet') {
+                    font-size: 14px;
+                }
                 @include media('<=phone') {
                     font-size: 13px;
                     margin-left: 6px;
@@ -59,6 +65,9 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                @include media('<=tablet') {
+                    width: 810px;
+                }
                 @include media('<=phone') {
                     display: flex;
                     flex-direction: column;
@@ -72,6 +81,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    @include media('<=tablet') {
+                        width: 300px;
+                        height: 140px;
+                    }
                     @include media('<=phone') {
                         margin-top: 40px;
                     }
@@ -86,12 +99,20 @@
                         align-items: center;
                         margin-right: 70px;
                         margin-bottom: 30px;
+                        @include media('<=tablet') {
+                            width: 60px;
+                            height: 60px;
+                        }
                         &-image {
                             background: url('../img/sale.png');
                             background-repeat: no-repeat;
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                         &__image-2 {
                             background: url('../img/sold.png');
@@ -99,6 +120,10 @@
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                         &__image-3 {
                             background: url('../img/discount.png');
@@ -106,6 +131,10 @@
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                     }
                     &__footer {
@@ -116,6 +145,10 @@
                             color: #171717;
                             font-size: 17px;
                             margin-left: 40px;
+                            @include media('<=tablet') {
+                                font-size: 12px;
+                                font-weight: 700;
+                            }
                         }
                         p {
                             font-family: $poppins;
@@ -124,6 +157,11 @@
                             margin-top: 7px;
                             padding-right: 10px;
                             width: 70%;
+                            @include media('<=tablet') {
+                                width: 45%;
+                                font-size: 9px;
+                                margin-left: 40px;
+                            }
                         }
                     }
                 }
@@ -133,6 +171,9 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            @include media('<=tablet') {
+                width: 810px;
+            }
             @include media('<=phone') {
                 display: flex;
                 flex-direction: column;
@@ -147,6 +188,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    @include media('<=tablet') {
+                        width: 300px;
+                        height: 140px;
+                    }
                     @include media('<=phone') {
                         margin-top: 40px;
                     }
@@ -161,12 +206,20 @@
                         align-items: center;
                         margin-right: 70px;
                         margin-bottom: 30px;
+                        @include media('<=tablet') {
+                            width: 60px;
+                            height: 60px;
+                        }
                         &-image {
                             background: url('../img/pay.png');
                             background-repeat: no-repeat;
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                         &__image-2 {
                             background: url('../img/help.png');
@@ -174,6 +227,10 @@
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                         &__image-3 {
                             background: url('../img/refund.png');
@@ -181,6 +238,10 @@
                             background-size: contain;
                             width: 30px;
                             height: 30px;
+                            @include media('<=tablet') {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                     }
                     &__footer {
@@ -191,6 +252,11 @@
                             color: #171717;
                             font-size: 17px;
                             margin-left: 10px;
+                            @include media('<=tablet') {
+                                font-size: 12px;
+                                margin-left: 35px;
+                                font-weight: 700;
+                            }
                         }
                         p {
                             font-family: $poppins;
@@ -199,6 +265,11 @@
                             margin-top: 7px;
                             padding-right: 30px;
                             width: 70%;
+                            @include media('<=tablet') {
+                                width: 45%;
+                                font-size: 9px;
+                                margin-left: 40px;
+                            }
                         }
                     }
                 }

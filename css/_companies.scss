@@ -1,5 +1,8 @@
 .section-companies {
     height: 80vh;
+    @include media('<=tablet') {
+        height: 60vh;
+    }
     @include media('<=phone') {
         height: 100vh;
     }
@@ -8,6 +11,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media('<=tablet') {
+            height: 60vh;
+        }
         @include media('<=phone') {
             height: 100vh;
         }

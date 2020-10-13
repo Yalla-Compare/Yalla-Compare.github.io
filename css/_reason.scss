@@ -14,6 +14,13 @@
             justify-content: center;
             align-items: center;
         }
+        @include media('<=tablet') {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__reasons {
             width: 950px;
             background: rgb(142,49,92);
@@ -28,6 +35,12 @@
             &__title {
                 margin-left: 65px;
                 margin-top: 25px;
+                @include media('<=tablet') {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
                 @include media('<=phone') {
                     display: flex;
                     flex-direction: column;
@@ -38,6 +51,9 @@
                     color: #FFFFFF;
                     font-family: $poppins;
                     font-size: 17px;
+                    @include media('<=tablet') {
+                        margin-right: 100px;
+                    }
                     @include media('<=phone') {
                         font-size: 18px;
                         margin-right: 80px;
@@ -45,6 +61,9 @@
                 }
                 &__big__title {
                     width: 500px;
+                    @include media('<=tablet') {
+                        margin-left: 40px;
+                    }   
                     @include media('<=phone') {
                         width: 500px;
                         display: flex;
@@ -75,6 +94,10 @@
                             left: 36%;
                             font-size: 32px;
                         }
+                        @include media('<=tablet') {
+                            top: 85px;
+                            left: 36%;
+                        }
                     }
                 }
             }
@@ -95,6 +118,9 @@
                 &__first-column {
                     height: 80%;
                     width: 40%;
+                    @include media('<=tablet') {
+                        width: 22%;
+                    }
                     @include media('<=phone') {
                         height: 80%;
                         width: 100%;
@@ -128,6 +154,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                                 @include media('<=phone') {
                                     width: 90%;
                                     font-size: 15px;
@@ -163,6 +193,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
@@ -194,6 +228,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                                 @include media('<=phone') {
                                     font-size: 15px;
                                     width: 93%;
@@ -234,6 +272,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                                 @include media('<=phone') {
                                     width: 90%;
                                     font-size: 15px;
@@ -272,6 +314,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                                 @include media('<=phone') {
                                     width: 90%;
                                     font-size: 15px;
@@ -310,6 +356,10 @@
                                 font-family: $poppins;
                                 font-size: 16px;
                                 margin-top: 10px;
+                                @include media('<=tablet') {
+                                    width: 95%;
+                                    font-size: 14px;
+                                }
                                 @include media('<=phone') {
                                     width: 90%;
                                     font-size: 15px;
@@ -323,12 +373,20 @@
         &__background {
             width: 700px;
             height: 465px;
+            @include media('<=tablet') {
+                width: 768px;
+                height: 450px;
+            }
             &__image {
                 background: url('../img/people.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 465px;
                 width: 700px;
+                @include media('<=tablet') {
+                    width: 768px;
+                    height: 450px;
+                }
                 @include media('<=phone') {
                     background: url('../img/people.png');
                     background-repeat: no-repeat;
