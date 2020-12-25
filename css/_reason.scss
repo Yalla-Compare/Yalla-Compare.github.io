@@ -22,7 +22,7 @@
             align-items: center;
         }
         &__reasons {
-            width: 950px;
+            width: 1000px;
             background: rgb(142,49,92);
             background: linear-gradient(90deg, rgba(142,49,92,1) 0%, rgba(232,76,155,1) 0%);
             height: 465px;
@@ -371,7 +371,7 @@
             }
         }
         &__background {
-            width: 700px;
+            width: 900px;
             height: 465px;
             @include media('<=tablet') {
                 width: 768px;
